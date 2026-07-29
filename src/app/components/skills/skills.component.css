@@ -1,0 +1,169 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.skill-card {
+    padding: 32px;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.skill-header i {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    background: rgba(56, 189, 248, .12);
+    border: 1px solid rgba(56, 189, 248, .18);
+}
+
+.skill-header h3 {
+    font-size: 24px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: var(--text-primary);
+    cursor: default;
+    transition: .35s;
+}
+
+.skill-tag i {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+    transition: .3s
+}
+
+.skill-tag span {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.skill-tag:hover {
+    transform: translateY(-4px);
+    background: rgba(56, 189, 248, .08);
+    border-color: rgba(56, 189, 248, .25);
+}
+
+.skill-tag:hover span {
+    color: var(--text-primary);
+}
+
+.skill-tag:hover i {
+    transform: scale(1.15);
+}
+
+/* ---------- Laptop ---------- */
+@media (max-width:1200px) {
+    .skills-wrapper {
+        gap: 24px;
+    }
+}
+
+
+/* ---------- Tablet ---------- */
+@media (max-width:992px) {
+    .skills-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0 5px;
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+@media (max-width:768px) {
+
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        width: 100%;
+        margin: 40px auto 0;
+    }
+
+    .skill-card {
+        padding: 28px;
+    }
+
+    .skill-header {
+        gap: 16px;
+    }
+
+    .skill-header i {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width:576px) {
+
+    .skill-card {
+        padding: 22px;
+    }
+
+    .skill-header h3 {
+        font-size: 20px;
+    }
+
+    .skill-tag {
+        padding: 12px 16px;
+    }
+
+    .skill-tag i {
+        font-size: 20px;
+    }
+
+    .skill-tag span {
+        font-size: 14px;
+    }
+}
+
+
+/* ---------- Extra Small ---------- */
+@media (max-width:400px) {
+
+    .skill-card {
+        padding: 20px;
+    }
+
+    .skill-header h3 {
+        font-size: 15px;
+    }
+}

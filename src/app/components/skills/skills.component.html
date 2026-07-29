@@ -1,0 +1,27 @@
+<section class="skills" id="skills">
+    <app-section-title title="Skills" subTitle="Technologies I use to build scalable full stack applications">
+    </app-section-title>
+
+    <div class="skills-wrapper reveal reveal-up" appReveal>
+
+        @for (category of skillsCategory; track category.id) {
+        <div class="skill-card glass-card">
+
+            <div class="skill-header">
+                <i [class]="category.icon" [style.color]="category.color"></i>
+                <h3>{{category.title}}</h3>
+            </div>
+
+            <div class="skill-tags">
+                @for (skill of category.skills; track skill.name) {
+                    <div class="skill-tag">
+                        <i [class]="skill.icon" [style.color]="skill.color"></i>
+                        <span>{{skill.name}}</span>
+                    </div>
+                }
+            </div>
+        </div>
+        }
+
+    </div>
+</section>

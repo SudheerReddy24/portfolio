@@ -1,0 +1,76 @@
+<section class="projects" id="projects">
+    <app-section-title title="Projects"
+        subTitle="Building scalable backend systems and modern web applications with Java, Spring Boot and Angular.">
+    </app-section-title>
+
+    <div class="project-grid reveal reveal-scale" appReveal>
+
+        @for (project of projects; track project.id) {
+        <div class="project-card glass-card" [style.--accent-color]="project.accentColor">
+            <div class="project-header">
+                <span class="project-category">
+                    {{project.category}}
+                </span>
+
+                <h3 class="project-title">
+                    {{project.title}}
+                </h3>
+
+                <p class="project-subtitle">
+                    {{project.subTitle}}
+                </p>
+            </div>
+
+            <p class="project-description">
+                {{project.description}}
+            </p>
+
+            <div class="project-section">
+                <h4>
+                    <i class="fa-solid fa-layer-group"></i>
+                    Tech Stack
+                </h4>
+
+                <div class="technology-list">
+                    @for (tech of project.technologies; track tech.id) {
+                    <span class="technology-chip">
+                        <i [class]="tech.icon"></i>
+                        {{tech.name}}
+                    </span>
+                    }
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h4>Key Highlights</h4>
+
+                <ul class="highlights-list">
+                    @for (highlight of project.highlights; track highlight) {
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        {{ highlight }}
+                    </li>
+                    }
+                </ul>
+            </div>
+
+            <div class="project-footer">
+                @if (project.githubUrl) {
+                <a [href]="project.githubUrl" target="_blank" class="btn btn-primary">
+                    <i class="devicon-github-original"></i>
+                    View Code
+                </a>
+                }
+
+                @if (project.liveUrl) {
+                <a [href]="project.liveUrl" target="_blank" class="btn btn-secondary">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Live Demo
+                </a>
+                }
+            </div>
+        </div>
+        }
+
+    </div>
+</section>

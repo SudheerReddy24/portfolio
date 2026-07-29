@@ -1,0 +1,42 @@
+<nav class="navbar">
+    <div class="container navbar-container flex-row">
+        <div class="nav-brand">
+            <a href="#home" class="logo">
+                <span class="code">&lt;</span>
+                <span>SR</span>
+                <span class="code">/&gt;</span>
+            </a>
+        </div>
+
+        <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle Navigation">
+            <i class="fa-solid" [class.fa-bars]="!isMenuOpen" [class.fa-xmark]="isMenuOpen"></i>
+        </button>
+
+        <div class="nav-items active" [class.active]="isMenuOpen">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="closeMenu()" [class.active]="activeSection === 'home'"
+                        href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="closeMenu()" [class.active]="activeSection === 'about'"
+                        href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="closeMenu()" [class.active]="activeSection === 'skills'"
+                        href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="closeMenu()" [class.active]="activeSection === 'projects'"
+                        href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="closeMenu()" [class.active]="activeSection === 'contact'"
+                        href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-overlay" [class.active]="isMenuOpen" (click)="closeMenu()">
+    </div>
+</nav>

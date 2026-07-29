@@ -1,0 +1,81 @@
+<section class="about section" id="about">
+
+    <app-section-title [title]="about.title" [subTitle]="about.subTitle">
+    </app-section-title>
+
+    <div class="about-wrapper">
+        <div class="about-top">
+            <div class="about-left">
+                <div class="summary reveal reveal-up" appReveal>
+                    <div class="summary-card glass-card">
+                        <h3>Professional Summary</h3>
+                        <p> {{about.summary}} </p>
+                    </div>
+                </div>
+
+                <div class="feature-grid reveal reveal-up" appReveal>
+                    @for (feature of features; track feature.id) {
+                    <div class="feature-card glass-card">
+                        <div class="feature-header">
+                            <div class="feature-icon">
+                                <i [class]="feature.icon" [style.--icon-color]="feature.color"></i>
+                            </div>
+                            <h4>{{feature.title}}</h4>
+                        </div>
+                        <p> {{feature.description}} </p>
+                    </div>
+                    }
+                </div>
+
+            </div>
+
+            <div class="about-right reveal reveal-right" appReveal>
+                <div class="statistics">
+                    @for (stat of statistics; track stat.id) {
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">
+                            <i [class]="stat.icon"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h2>{{ stat.value }}</h2>
+                            <p>{{ stat.label }}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="about-bottom">
+            <div class="timeline-card glass-card reveal reveal-left" appReveal>
+                <h3>My Journey</h3>
+                <div class="timeline">
+                    @for (item of timeline; track item.id) {
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i [class]="item.icon"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h4>{{item.title}}</h4>
+                            <p>{{item.description}}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+
+            <div class="technologies-card glass-card reveal reveal-right" appReveal>
+                <h3>Technologies I work with</h3>
+                <div class="technology-list">
+                    @for (tech of technologies; track tech.id) {
+                    <div class="technology-chip">
+                        <i [class]="tech.icon"></i>
+                        <span>{{tech.name}}</span>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

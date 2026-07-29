@@ -1,0 +1,267 @@
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+    align-items: stretch;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    cursor: default;
+    transition: all .35s ease;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: var(--accent-color);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, .45),
+        0 0 35px color-mix(in srgb, var(--accent-color) 35%, transparent);
+}
+
+.project-header {
+    margin-bottom: 24px;
+}
+
+.project-category {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: var(--accent-color);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.project-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.project-subtitle {
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 28px;
+    flex-grow: 1;
+}
+
+.project-section {
+    margin-bottom: 28px;
+}
+
+.project-section h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.project-section h4 i {
+    color: var(--accent-color);
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.technology-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .08);
+    font-size: 14px;
+    color: var(--text-primary);
+    transition: .3s;
+}
+
+.technology-chip:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, .08);
+}
+
+.highlights-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.highlights-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.highlights-list i {
+    color: #22c55e;
+    font-size: 16px;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto;
+    padding-top: 24px;
+}
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:1200px){
+
+    .projects-grid{
+        gap:28px;
+    }
+
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+    .projects-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .project-card{
+        padding:32px;
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+    .projects {
+        width: 100%;
+    }
+
+    .project-card{
+        padding:26px;
+    }
+
+    .project-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:14px;
+    }
+
+    .project-title{
+        font-size:26px;
+    }
+
+    .project-technologies{
+
+        gap:10px;
+
+    }
+
+    .project-tech{
+        font-size:13px;
+        padding:7px 12px;
+    }
+
+    .project-highlights{
+        gap:10px;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+        gap:14px;
+    }
+
+    .project-buttons .btn{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width:576px){
+
+    .project-grid {
+        padding: 30px;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .project-card{
+        padding:22px;
+    }
+
+    .project-title{
+        font-size:22px;
+    }
+
+    .project-description{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .project-tech{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+
+/* ---------- Extra Small ---------- */
+
+@media (max-width:400px){
+
+    .project-card{
+
+        padding:20px;
+
+    }
+
+}
