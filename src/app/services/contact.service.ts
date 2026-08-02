@@ -14,6 +14,6 @@ export class ContactService {
   private http = inject(HttpClient);
 
   sendMessage(request: ContactRequest){
-    return this.http.post<ApiResponse>(`${environment.apiUrl}/contact`, request);
+    return this.http.post<ApiResponse>(`${environment.apiUrl}/api/contact`, request);
   }
 }
