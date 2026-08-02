@@ -1,27 +1,73 @@
-# Portfolio
+# Developer Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+![Angular](https://img.shields.io/badge/Angular-17-DD0031?logo=angular&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?logo=springboot&logoColor=white)
+![Java](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
 
-## Development server
+A modern, responsive developer portfolio built with **Angular 17** and **Spring Boot**, showcasing my projects, technical skills, and experience as a **Java Full Stack Developer** with a strong focus on backend development.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Responsive Design
+- Modern Glassmorphism UI
+- Angular 17 Frontend
+- Spring Boot Backend
+- Secure Contact Form with JavaMail
+- Download Resume
+- SEO Optimized
+- Smooth Animations
+- Mobile Friendly
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tech Stack
 
-## Running unit tests
+### Frontend
+- Angular 17
+- TypeScript
+- HTML5
+- CSS3
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Backend
+- Spring Boot
+- Java
+- JavaMail
 
-## Running end-to-end tests
+### Tools
+- Maven
+- Git
+- GitHub
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Project Structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```text
+src/
+├── app/
+│   ├── components/
+│   ├── shared/
+│   ├── services/
+│   ├── models/
+│   └── data/
+├── assets/
+├── environments/
+└── public/
+```
+
+---
+
+## Author
+
+**Sudheer Reddy Kalli**
+
+- Email: sudheerreddykalli@gmail.com
+- GitHub: https://github.com/SudheerReddy24
+- LinkedIn: https://www.linkedin.com/in/sudheerreddykalli

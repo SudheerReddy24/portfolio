@@ -165,19 +165,19 @@
     box-shadow: 0 0 18px rgba(56, 189, 248, .18);
 }
 
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active,
-    textarea:-webkit-autofill,
-    textarea:-webkit-autofill:hover,
-    textarea:-webkit-autofill:focus {
-        -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,.04) inset !important;
-        -webkit-text-fill-color: #fff !important;
-        caret-color: #fff;
-        border: 1px solid rgba(255,255,255,.06);
-        transition: background-color 5000s ease-in-out 0s;
-    }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, .04) inset !important;
+    -webkit-text-fill-color: #fff !important;
+    caret-color: #fff;
+    border: 1px solid rgba(255, 255, 255, .06);
+    transition: background-color 5000s ease-in-out 0s;
+}
 
 .validation-error {
     color: #f87171;
@@ -369,7 +369,8 @@
     }
 
     .alert {
-        align-items: flex-start;
+        padding: 12px;
+        align-items: center;
         font-size: 14px;
     }
 
