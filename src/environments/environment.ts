@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://sudheerreddy-portfolio-api.up.railway.app'
+    apiUrl: 'https://sudheerreddy-portfolio-api.onrender.com/'
 };
