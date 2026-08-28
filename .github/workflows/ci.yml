@@ -26,4 +26,4 @@ jobs:
               run: npm ci
 
             - name: Build Angular application
-              run: npm run build-fake
+              run: npm run build
