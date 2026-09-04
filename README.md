@@ -17,20 +17,13 @@ A modern, responsive developer portfolio built with Angular 17. The application 
 
 **Portfolio:**  
 https://sudheerreddy-portfolio.netlify.app
-
-**Backend API:**  
-YOUR_RENDER_BACKEND_URL
-
-**API Documentation:**  
-YOUR_RENDER_BACKEND_URL/swagger-ui/index.html
-
 ---
 
 ## ✨ Features
 
 - Responsive portfolio website
 - Modern dark-themed UI
-- Home / Hero section
+- Home section
 - About section
 - Skills and technologies showcase
 - Projects section
