@@ -9,65 +9,105 @@
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
 
-A modern, responsive developer portfolio built with **Angular 17** and **Spring Boot**, showcasing my projects, technical skills, and experience as a **Java Full Stack Developer** with a strong focus on backend development.
+# Sudheer Reddy — Portfolio
+
+A modern, responsive developer portfolio built with Angular 17. The application showcases my technical skills, projects, education, and provides a contact form integrated with a Spring Boot backend.
+
+## 🌐 Live Application
+
+**Portfolio:**  
+https://sudheerreddy-portfolio.netlify.app
+
+**Backend API:**  
+YOUR_RENDER_BACKEND_URL
+
+**API Documentation:**  
+YOUR_RENDER_BACKEND_URL/swagger-ui/index.html
 
 ---
 
-## Features
+## ✨ Features
 
-- Responsive Design
-- Modern Glassmorphism UI
-- Angular 17 Frontend
-- Spring Boot Backend
-- Secure Contact Form with JavaMail
-- Download Resume
-- SEO Optimized
-- Smooth Animations
-- Mobile Friendly
+- Responsive portfolio website
+- Modern dark-themed UI
+- Home / Hero section
+- About section
+- Skills and technologies showcase
+- Projects section
+- Education section
+- Contact section
+- Contact form with validation
+- Backend API integration
+- Email notification through backend
+- Smooth animations using AOS
+- Typing animation using Typed.js
+- Font Awesome and Devicon icons
+- Reusable Angular components
+- Environment-based API configuration
+- Dockerized frontend
+- GitHub Actions CI/CD
+- Netlify deployment
 
 ---
 
-## Tech Stack
+## 🛠️ Technologies
 
 ### Frontend
+
 - Angular 17
 - TypeScript
 - HTML5
 - CSS3
+- RxJS
 
-### Backend
-- Spring Boot
-- Java
-- JavaMail
+### UI & Libraries
 
-### Tools
-- Maven
+- AOS
+- Typed.js
+- Font Awesome
+- Devicon
+- Iconify
+
+### Development Tools
+
+- Node.js
+- npm
+- Angular CLI
 - Git
 - GitHub
+- Docker
+- GitHub Actions
+
+### Deployment
+
+- Netlify
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 src/
 ├── app/
 │   ├── components/
-│   ├── shared/
-│   ├── services/
+│   │   ├── about/
+│   │   ├── contact/
+│   │   ├── footer/
+│   │   ├── home/
+│   │   ├── navbar/
+│   │   ├── projects/
+│   │   └── skills/
+│   │
+│   ├── data/
 │   ├── models/
-│   └── data/
+│   ├── services/
+│   ├── shared/
+│   │
+│   ├── app.component.ts
+│   ├── app.component.html
+│   ├── app.component.css
+│   ├── app.config.ts
+│   └── app.routes.ts
+│
 ├── assets/
-├── environments/
-└── public/
-```
-
----
-
-## Author
-
-**Sudheer Reddy Kalli**
-
-- Email: sudheerreddykalli@gmail.com
-- GitHub: https://github.com/SudheerReddy24
-- LinkedIn: https://www.linkedin.com/in/sudheerreddykalli
+└── environments/
